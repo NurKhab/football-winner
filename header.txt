@@ -1,0 +1,15 @@
+<header class="header">
+            <div class="header__title"><span class="span__special">Foot</span>ball <span class="span__special">Win</span>ner</div>
+            <div class="header__subtitle"><i class="fa-solid fa-futbol"></i>&nbsp;Ближайшие матчи:</div>
+            <ul class="header__list">
+                <li>
+                    <a href="#barca-real" class="popup-link">
+                        <i class="fa-solid fa-star"><div class="star-text">Матч дня!</div></i>&nbsp;
+                        <span class="span__barca">ФК Барселона</span> <span class="span__colon">:</span> <span class="span__real">Реал Мадрид</span>&nbsp;
+                        <i class="fa-solid fa-star"><div class="star-text">Матч дня!</div></i>
+                    </a>
+                </li>
+                <li><a href="#milan-inter"><span class="span__milan">Милан</span> <span class="span__colon">:</span> <span class="span__inter">Интер</span></a></li>
+                <li><a href="#bavaria-borusd"><span class="span__bavaria">Бавария</span> <span class="span__colon">:</span> <span class="span__borusd">Боруссия Д.</span></a></li>
+            </ul>
+        </header>

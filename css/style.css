@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@500&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: none;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+html, body {
+  font-family: "Montserrat Alternates", sans-serif;
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  margin: 25px 50px;
+}
+.header span {
+  font-weight: 600;
+}
+.header__title {
+  text-align: left;
+  font-size: 30px;
+}
+.header__subtitle {
+  font-size: 40px;
+  font-weight: 1000;
+}
+.header__list {
+  list-style: none;
+  font-size: 35px;
+}
+.header__list li {
+  margin-top: 15px;
+}
+
+.span__special {
+  color: #B0003F;
+}
+
+.main {
+  text-align: center;
+  flex: 1 1 auto;
+}
+.main__title {
+  margin-bottom: 25px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.main__block {
+  background: rgba(0, 0, 0, 0.1);
+  margin: 25px auto;
+  padding: 15px;
+  max-width: 70%;
+}
+.main__selects-container {
+  display: grid;
+  max-width: 100%;
+  justify-content: center;
+  justify-items: center;
+  grid-template: auto/25% 25%;
+}
+.main select, .main button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 50px;
+  width: 25%;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  padding: 5px 10px;
+  margin-bottom: 25px;
+}
+.main #score {
+  width: 50%;
+}
+.main option {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 25px;
+  margin: 0;
+  min-width: 100%;
+}
+.main button {
+  font-family: "Montserrat Alternates";
+  border: none;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.main button:hover {
+  font-size: 27px;
+  transform: translateX(-5px) translateY(-5px);
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.main button:active {
+  font-size: 25px;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 900px) {
+  .main option {
+    font-size: 20px;
+  }
+  .main button:hover {
+    transform: none;
+    font-size: 25px;
+  }
+}

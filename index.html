@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="">
+    <title>Football Winner</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"> 
+            <div class="header__title"><span class="span__special">Foot</span>ball <span class="span__special">Win</span>ner</div>
+        </header>
+        <main class="main">
+            <form action="#" method="#" id="form">
+                <!-- ? game --> 
+                <div class="main__block">
+                    <div class="main__title">Выберите матч:</div>
+                    <select name="game">
+                        <option value="1">Аякс - Рейнджерс</option>
+                        <option value="2">Айнтрахт - Спортинг</option>
+                        <option value="3">Наполи - Ливерпуль</option>
+                        <option value="4">Брюгге - Байер</option>
+                        <option value="5">Атлетико - Порту</option>
+                        <option value="6">Интер - Бавария</option>
+                        <option value="7">Барселона - Виктория</option>
+                        <option value="8">ТТХ - Марсель</option>
+                    </select>
+                </div>
+
+                <!-- ? score -->
+                <div class="main__block">
+                    <div class="main__title">Счёт:</div>
+                    <div class="main__selects-container">
+                        <select name="score1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+        
+                        <select name="score2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- ? chooser -->
+                <div class="main__block">
+                    <div class="main__title">Кто делает выбор?</div>
+                    <select name="chooser">
+                        <option value="nurkhab">NurKhab</option>
+                        <option value="clown_net">Clown.net</option>
+                    </select>
+                </div>
+
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить</button>
+            </form>
+        </main>
+    </div>
+    <!-- <div class="popups">
+        <div id="barca-real" class="popup">
+            <div class="popup__body">
+              <div id="popup_c" class="popup__content">
+                <a href="#" class="popup__close"><i class="fas fa-times"></i></a>
+                <div class="popup__title"><span class="span__barca">ФК Барселона</span> <span class="span__colon">:</span> <span class="span__real">Реал Мадрид</span></div>
+                <div class="popup__line"></div>
+                <div class="popup__block">
+                    <div class="popup__block-title">Выберите победителя:</div>
+                    <div class="popup__block-list">
+                        <ul>
+                            <li><span class="span__draw">Ничья</span></li>
+                            <li><span class="span__barca">ФК Барселона</span></li>
+                            <li><span class="span__real">Реал Мадрид</span></li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="popup__thanks disable">Ваш ответ записан, спасибо за выбор.</div>
+              </div>
+            </div>
+        </div>
+    </div> -->
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/6c0ad7ea8a.js" crossorigin="anonymous"></script>
+</body>
+</html>

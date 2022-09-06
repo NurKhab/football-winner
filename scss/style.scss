@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}   
+
+a {
+    color: none;
+    text-decoration: none;
+    // &:hover {
+    //     font-size: 37px;
+    // }
+    // &:active {
+    //     font-size: 35px;
+    // }
+    transition: all 0.3s ease 0s;
+}
+
+html, body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    user-select: none;
+    text-align: center;
+    margin: 25px 50px;
+
+    span {
+        font-weight: 600;
+    }
+
+    &__title {
+        text-align: left;
+        font-size: 30px;
+    }
+
+    &__subtitle {
+        font-size: 40px;
+        font-weight: 1000;
+    }
+
+    &__list {
+        list-style: none;
+        font-size: 35px;
+        li {
+            margin-top: 15px;
+        }
+    }
+}
+
+.span {
+    &__special {
+        color: #B0003F;
+    }
+}
+
+.main {
+    text-align: center;
+    flex: 1 1 auto;
+
+    &__title {
+        margin-bottom: 25px;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    &__block {
+        background: rgba(0, 0, 0, .1);
+        margin: 25px auto;
+        padding: 15px;
+        max-width: 70%;
+    }
+
+    &__selects-container {
+        display: grid;
+        max-width: 100%;
+        justify-content: center;
+        justify-items: center;
+        grid-template: auto / 25% 25%;
+    }
+
+    select, button {
+        user-select: none;
+        border-radius: 50px;
+        width: 25%;
+        height: 50px;
+        font-size: 25px;
+        text-align: center;
+        padding: 5px 10px;
+        margin-bottom: 25px;
+    }
+
+    #score {
+        width: 50%;
+    }
+
+    option {
+        user-select: none;
+        font-size: 25px;
+        margin: 0;
+        min-width: 100%;
+    }
+
+    button {
+        font-family: 'Montserrat Alternates';
+        border: none;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+
+        &:hover {
+            font-size: 27px;
+            transform: translateX(-5px) translateY(-5px);
+            box-shadow: 5px 5px 0px rgba(0, 0, 0, .5);
+        }
+
+        &:active {
+            font-size: 25px;
+            transform: none;    
+            box-shadow: none;
+        }
+    }
+
+    // &__chooser {
+    // }
+
+    // &__game {
+    // }
+
+    // &__score {
+    // }
+}
+
+
+.footer { 
+}
+
+@media (max-width: 900px) {
+    .main {
+        option {
+            font-size: 20px;
+        }
+        button {
+            &:hover {
+                transform: none;
+                font-size: 25px;    
+            }
+        }
+    }
+    
+}
